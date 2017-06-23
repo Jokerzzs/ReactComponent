@@ -1,0 +1,44 @@
+@import "../../stylelibrary/webpartcommon";
+
+#slider {
+    width: 730px;
+    height: 390px;
+
+    .acs-sliderframe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .acs-slider-arrow-wrap{
+            margin-top: 5px;
+            }
+
+        ul {            
+            position: relative;
+            left: 0;
+            height: 350px;
+            overflow: hidden;
+            transition: left 1s;
+            margin: 0px !important;
+            padding: 0px !important;
+
+            > li {
+                display: inline-block;
+                height: 100%;               
+
+                > a {
+                    display: block;
+                    height: 350px;
+                    width: 100%;
+
+                    img {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }                
+            }
+        }
+    }
+}
